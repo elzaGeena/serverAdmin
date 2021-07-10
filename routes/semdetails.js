@@ -9,14 +9,7 @@ router.get('/',async(req, res) =>{
         res.send('Error'+ err)
     }
 })
-// router.get('/:id',async(req, res) =>{
-//     try{
-//         const semdetails = await Semdetail.findById(req.params.id);
-//         res.json(semdetails)
-//     }catch(err){
-//         res.send('Error'+ err)
-//     }
-// })
+
 router.delete('/:id',async(req, res) =>{
     try{
         const semdetails = await Semdetail.findByIdAndDelete(req.params.id);
