@@ -17,8 +17,8 @@ router.post('/', async(req,res)=>{
         courseName: req.body.courseName,
     })
     try{
-       const a1 = await course.save();
-       res.json(a1)
+       const c1 = await course.save();
+       res.json(c1)
     }catch(err){
         res.send("error")
     }
